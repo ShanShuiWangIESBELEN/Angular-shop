@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
-
-import { products } from '../products';
+import { CommonModule } from '@angular/common';
+import { products } from '../model/products';
+import { RouterLink } from '@angular/router';
+import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
 
 @Component({
   selector: 'app-product-list',
+  standalone: true,
+  imports: [RouterLink, CommonModule, ProductAlertsComponent],
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
   products = [...products];
