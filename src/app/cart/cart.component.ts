@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CartService } from '../service/cart.service';
 import { CommonModule } from '@angular/common';
 import { Product } from '../model/products';
+import { ProductsNew } from '../model/productsNew';
 import { RouterLink } from '@angular/router';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
@@ -30,6 +31,9 @@ export class CartComponent {
 
   get items(): Product[] {
     return this.cartService.getItems();
+  }
+  get itemsNew():ProductsNew[]{
+    return this.cartService.getItems()
   }
 
   onSubmit(): void {

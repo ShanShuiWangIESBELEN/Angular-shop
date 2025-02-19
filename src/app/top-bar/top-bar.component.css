@@ -1,0 +1,13 @@
+
+/* 
+Shop
+Los productos que se muestran van a ser dos proveedor diferentes.
+a. los de primer proveedor son los que ya existen,pero obteniendose de un archivo.json
+b. los de segundo proveedor se obtendrán de otro archivo,donde los productos tienen esta estructura:
+{ producto_id:"2",
+ producto_name:"Phone Mini"
+ cpst 599,
+ details: "A compact phone with great perfomance
+ supplier:"2"}
+ 2. si no se puede acceder a algun archivo o no tiene datos ,se muestrará un mensaje apropiado en la página.
+ */
